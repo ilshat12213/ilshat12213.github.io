@@ -1,0 +1,305 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgba(187, 187, 187, 0.719);
+    background-image: url(/images/pawel-kadysz-CuFYW1c97w8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover auto;
+    background-position: center 0px;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px; /* Reduced padding */
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; /* Reduced margin */
+}
+
+.logo {
+    width: 150px; /* Reduced width */
+    height: auto;
+    display: flex;
+    margin: 10px;
+}
+
+nav {
+    order: 2;
+    margin-top: 10px; /* Reduced margin */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.titles {
+    text-align: center;
+    position: relative;
+    margin: -5vw 0; /* Reduced margin */
+    font-size: 2vw;
+    line-height: 1.5vw;
+    font-family: Inconsolata;
+}
+
+#slider_bl {
+    height: 30vw;
+    display: inline-block;
+    width: 60vw;
+    position: relative;
+    margin: 20vw 10vw; /* Reduced margin */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #00000046;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+}
+
+#slider_bl .inner {
+    width: 700%;
+    font-size: 2.1vw;
+    line-height: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slider_bl article {
+    float: left;
+    position: relative;
+    margin-right: 5vw; /* Reduced margin */
+}
+
+.slider-dot-control {
+    display: flex;
+    justify-content: center;
+    margin: 0 10vw; /* Reduced margin */
+}
+
+.slider-dot-control label {
+    background-color: #00000046;
+    cursor: pointer;
+    border-radius: 30px;
+    display: inline-block;
+    width: 80px; /* Reduced width */
+    height: 30px; /* Reduced height */
+    margin: -10vw auto; /* Reduced margin */
+    border: 4px solid #424242;
+    transition: all 0.3s;
+}
+
+.slider-dot-control label:hover {
+    background: #ccc;
+    border-color: #777;
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+.slider-dot-control p {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Myriad Pro", sans-serif;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0;
+}
+
+#slide1:checked ~ .slider-wrapper .inner {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slider-wrapper .inner {
+    transform: translateX(-15.6%);
+}
+
+#slide3:checked ~ .slider-wrapper .inner {
+    transform: translateX(-31.1%);
+}
+
+#slide4:checked ~ .slider-wrapper .inner {
+    transform: translateX(-46.5%);
+}
+
+.pmed {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 10vw; /* Reduced margin */
+}
+
+#game-slider {
+    height: 30vw;
+    display: inline-block;
+    width: 60vw;
+    position: relative;
+    margin: 20vw 10vw; /* Reduced margin */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #00000046;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+}
+
+#game-slider .inner2 {
+    width: 700%;
+    font-size: 2.1vw;
+    line-height: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+#game-slider img {
+    margin-right: 2vw;
+    width: 60vw;
+    height: 30vw;
+    border-radius: 15px;
+}
+
+.slider-dot-control2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 10vw; /* Reduced margin */
+}
+
+.slider-dot-control2 label {
+    background-color: #00000046;
+    cursor: pointer;
+    border-radius: 30px;
+    display: inline-block;
+    width: 80px; /* Reduced width */
+    height: 30px; /* Reduced height */
+    margin: -10vw auto; /* Reduced margin */
+    border: 4px solid #424242;
+    transition: all 0.3s;
+}
+
+.slider-dot-control2 label:hover {
+    background: #ccc;
+    border-color: #777;
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+.slider-dot-control2 p {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Myriad Pro", sans-serif;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0;
+}
+
+#slide5:checked ~ .slider-wrapper2 .inner2 {
+    transform: translateX(0);
+}
+
+#slide6:checked ~ .slider-wrapper2 .inner2 {
+    transform: translateX(-15.6%);
+}
+
+#slide7:checked ~ .slider-wrapper2 .inner2 {
+    transform: translateX(-31.1%);
+}
+
+#slide8:checked ~ .slider-wrapper2 .inner2 {
+    transform: translateX(-46.5%);
+}
+
+.rmap {
+    margin: -10vw 0; /* Reduced margin */
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center 0;
+    }
+
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    nav {
+        order: 2;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .titles {
+        margin: -3vw auto;
+        font-size: 5vw;
+        line-height: 0vw;
+    }
+
+    .titles h1 {
+        line-height: 9vw;
+    }
+
+    .titles p {
+        line-height: 5vw;
+    }
+
+    #slider_bl {
+        display: inline-block;
+        bottom: 5vw;
+        right: 10vw;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    #slider_bl .inner {
+        font-size: 4.2vw;
+    }
+
+    #slider_bl article {
+        float: left;
+        position: relative;
+        margin-right: 14.4vw; /* Reduced margin */
+    }
+
+    .slider-dot-control label {
+        margin: -19.4vw 0;
+        margin-right: 2vw; /* Reduced margin */
+    }
+}
